@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeVerse | Criação de Landing Pages</title>
+  <meta name="description" content="Criação de landing pages modernas, rápidas e otimizadas para conversão.">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">&lt; Code<span>Verse &gt;</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#orcamento">Orçamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Criação de <span>Landing Pages</span> que convertem</h1>
+      <p>Transformo sua ideia em uma presença digital moderna, otimizada e que gera resultados reais.</p>
+      <div class="cta-buttons">
+        <a href="#orcamento" class="btn-primary">Solicitar Orçamento</a>
+        <a href="https://wa.me/5599999999999" target="_blank" class="btn-secondary">Falar no WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="servicos">
+    <h2>Meus Serviços</h2>
+    <div class="servicos-grid">
+      <div class="card">
+        <h3>Landing Page Profissional</h3>
+        <p>Design exclusivo e otimizado para aumentar conversões e engajamento.</p>
+      </div>
+      <div class="card">
+        <h3>Integrações</h3>
+        <p>Conecto sua página a WhatsApp, e-mail, APIs e automações para gerar leads de forma inteligente.</p>
+      </div>
+      <div class="card">
+        <h3>Hospedagem & SEO</h3>
+        <p>Configuração completa para sua página aparecer nos resultados do Google e carregar em alta velocidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio" class="portfolio">
+    <h2>Soluções Desenvolvidas</h2>
+    <div class="portfolio-grid">
+      <div class="projeto">
+        <a href="https://mesaque96.github.io/Projeto-Landing-Page-Restaurante/" target="_blank">
+          <img src="img/ChatGPT Image 3 de nov. de 2025, 19_56_07.png" alt="Landing Page para restaurantes">
+          <div class="overlay">Landing Page para restaurantes</div>
+        </a>
+      </div>
+      <div class="projeto">
+        <a href="https://mesaque96.github.io/Projeto-Landing-Page-Produtos-Para-Casa/" target="_blank">
+          <img src="img/ChatGPT Image 3 de nov. de 2025, 21_46_30.png" alt="Projeto 2">
+          <div class="overlay">Landing Page para loja virtual de produtos para o lar</div>
+        </a>
+      </div>
+      <div class="projeto">
+        <a href="https://mesaque96.github.io/Projeto-Landing-Page-Artigos-Esportivos/" target="_blank">
+          <img src="img/ChatGPT Image 3 de nov. de 2025, 21_44_11.png" alt="Projeto 3">
+          <div class="overlay">Landing Page para loja virtual de materiais esportivos</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Orçamento -->
+  <section id="orcamento" class="orcamento">
+    <h2>Solicite um Orçamento</h2>
+    <p>Preencha o formulário abaixo e receba uma proposta personalizada em até 24h.</p>
+    <br>
+
+    <form action="https://api.web3forms.com/submit" method="POST" class="quote-form" id="formOrcamento">
+      <input type="hidden" name="access_key" value="fca8cc0a-3436-4a39-9061-30cbffbd050c">
+      <!-- Honeypot -->
+      <input type="text" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="text" name="business" placeholder="Tipo de negócio (ex: loja, curso, evento)">
+      <textarea name="message" placeholder="Descreva o que você precisa..." required></textarea>
+
+      <button type="submit">Enviar Solicitação</button>
+      <p id="status"></p>
+    </form>
+  </section>
+
+  <!-- Redes -->
+  <section class="redes">
+    <h2>Conecte-se comigo</h2>
+    <div class="social-links">
+      <a href="https://github.com/mesaquesantos" target="_blank">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/mesaquesantos" target="_blank">💼 LinkedIn</a>
+      <a href="https://instagram.com/mesaquesantos" target="_blank">📸 Instagram</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Mesaque Oliveira — Criação de Landing Pages Profissionais</p>
+  </footer>
+</body>
+</html>
