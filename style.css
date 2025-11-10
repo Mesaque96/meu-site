@@ -74,8 +74,9 @@ backdrop-filter: blur(3px);
 }
 
 .hero-content {
-  position: relative;
   z-index: 10;
+  max-width: 700px;
+  padding: 20px;
 }
 
 .hero-bg {
@@ -110,6 +111,7 @@ backdrop-filter: blur(3px);
 .cta-buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .btn-primary, .btn-secondary {
@@ -272,3 +274,67 @@ h2 {
   color: #777;
   font-size: 0.9rem;
 }
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+  section {
+    padding: 80px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  section {
+    padding: 60px 25px;
+  }
+  .projeto img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    padding: 120px 20px 80px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .cta-buttons {
+    flex-direction: column;
+  }
+  section {
+    padding: 60px 20px;
+  }
+  .navbar {
+    padding: 10px 15px;
+  }
+  .logo {
+    font-size: 1.3rem;
+  }
+  .card {
+    padding: 20px;
+  }
+  .portfolio-grid {
+    gap: 15px;
+  }
+}
+
+
